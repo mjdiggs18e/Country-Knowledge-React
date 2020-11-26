@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Country from './Country';
+import '../card.css';
 
 const CountryList = () => {
   useEffect(() => {
@@ -7,6 +8,11 @@ const CountryList = () => {
   }, []);
 
   const [countries, setCountries] = useState([]);
+  const [search, setSearch] = useState('');
+
+  const filteredCountries = countries.filter((country) => {
+    return country.name.toLowerCase().includes(search.toLowerCase());
+  });
 
   const fetchCountry = async () => {
     const retrieveCountries = await fetch(
@@ -18,10 +24,17 @@ const CountryList = () => {
   };
 
   return (
-    <div className="card-grid">
-      {countries.map((country) => (
-        <Country key={country.alpha2Code} data={country} />
-      ))}
+    <div className="country-input">
+      <input
+        type="text"
+        placeholder="Search for a country"
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <div className="card-grid">
+        {filteredCountries.map((country) => (
+          <Country key={country.alpha2Code} data={country} />
+        ))}
+      </div>
     </div>
   );
 };

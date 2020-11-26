@@ -53,7 +53,28 @@ body {
 }
 
 .landing-header p {
-  margin: 3rem 1rem 3rem 1rem;
+  margin: 3rem 1rem 1rem 1rem;
   font-size: 18px;
   font-weight: 600;
+}
+
+.country-input {
+  text-align: center;
+}
+
+.country-input input {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2rem;
+  width: 275px;
+  height: 30px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+.country-input input:focus {
+  outline: none;
+  border: 1px solid #9fa0c3;
 }
