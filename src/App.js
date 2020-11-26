@@ -1,5 +1,6 @@
 import React from 'react';
 import LandingHeader from './component/LandingHeader';
+import DetailHeader from './component/DetailHeader';
 import CountryList from './component/CountryList';
 import CountryDetail from './component/CountryDetail';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ function App() {
           <CountryList />
         </Route>
         <Route path="/country/:id">
+          <DetailHeader />
           <CountryDetail />
         </Route>
       </Switch>
