@@ -6,6 +6,7 @@ import '../card.css';
 
 const CountryDetail = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetchCountry();
   }, []);
 
