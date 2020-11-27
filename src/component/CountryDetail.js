@@ -85,7 +85,7 @@ const CountryDetail = () => {
 
         {/* Displays all currencies used in country*/}
 
-        <div className="country-card final">
+        <div className="country-card ">
           <span>Currencies</span>
           {country.currencies.map((currency) => (
             <div>
@@ -100,7 +100,7 @@ const CountryDetail = () => {
         </div>
 
         {/* Displays all timezones in countries*/}
-        <div className="country-card final">
+        <div className="country-card ">
           <span>Timezones</span>
           {country.timezones.map((time) => (
             <p key={uuidv4()} className="country-timezone">

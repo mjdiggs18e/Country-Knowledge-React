@@ -95,9 +95,9 @@ body {
   font-size: 24px;
   padding: 1rem;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
   width: 300px;
   min-height: 150px;
   margin: 1rem;
@@ -169,5 +169,19 @@ span {
   .card-grid {
     column-gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  }
+
+  .country-flex {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .country-flag {
+    width: 250px;
+  }
+
+  .country-card {
+    width: 250px;
   }
 }
