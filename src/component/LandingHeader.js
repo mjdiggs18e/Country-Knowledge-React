@@ -4,7 +4,7 @@ import '../card.css';
 const LandingHeader = () => {
   return (
     <div className="landing-header">
-      <p>Select a country to get information about it.</p>
+      <p>Country Knowledge</p>
     </div>
   );
 };
