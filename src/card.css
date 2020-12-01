@@ -121,6 +121,7 @@ span {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1368px;
+  align-items: flex-start;
 }
 
 .country-card p {
