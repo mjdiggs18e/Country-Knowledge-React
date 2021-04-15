@@ -9,7 +9,7 @@ Displays information on every country using https://restcountries.eu API. Each c
 
 ### Purpose
 
-The reason for building this website was to learn about React Router. I was able to generate unique routes for each country based off it's name or abbreviation. I also wanted to experiment and try Framer Motion so I added a subtile scale effect onto the country cards. 
+The reason for building this website was to learn about React Router and useState/useEffect. I was able to generate unique routes for each country based off it's name or abbreviation. I also wanted to experiment and try Framer Motion so I added a subtile scale effect onto the country cards.
 
 ### Features
 
