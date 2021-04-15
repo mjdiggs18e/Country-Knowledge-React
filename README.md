@@ -17,7 +17,7 @@ The reason for building this website was to learn about React Router. I was able
 
 ### Technologies
 
-Country Knowledgen was created using the following tools:
+Country Knowledge was created using the following tools:
 
 - [React](https://github.com/facebook/react) - JavaScript library for building user interfaces.
 - [React Router](https://github.com/ReactTraining/react-router) - Declarative routing for React
